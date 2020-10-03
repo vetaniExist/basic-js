@@ -34,8 +34,7 @@ class VigenereCipheringMachine {
 
       result += String.fromCharCode(shiftedCharCode);
     }
-
-    let missingSpaces = message.length - calibratedMessage.length;
+    
     for (let i = 0; i < message.length; i += 1) {
       if (message[i] === " ") {
         result = result.slice(0,i) + " " + result.slice(i);
